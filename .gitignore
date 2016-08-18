@@ -1,0 +1,3 @@
+build/*
+src/*.pb-c.*
+node_modules
