@@ -11,6 +11,9 @@ RUN apt-get update && \
 RUN apt-get -y install protobuf-c-compiler && \
     apt-get -y install libprotobuf-c-dev
 
+RUN apt-get -y install libssl-dev && \
+    apt-get -y install librabbitmq-dev
+
 ADD . /code
 WORKDIR /code
 

@@ -1,9 +1,10 @@
 {
   "name": "protobuf-c-test",
   "scripts": {
-    "test": "make && tape test/*-spec.js | tap-summary"
+    "test": "make && tape test/*-spec.js"
   },
   "devDependencies": {
+    "amqp": "^0.2.6",
     "tap-summary": "^3.0.1",
     "tape": "^4.6.0"
   }

@@ -1,0 +1,15 @@
+version: '2'
+services:
+  test:
+    build: .
+    volumes:
+     - .:/code
+    links:
+     - rabbitmq
+    depends_on:
+     - rabbitmq
+    environment:
+     - AMQP_HOST=rabbitmq
+  rabbitmq:
+    image: rabbitmq:latest
+
